@@ -4,7 +4,7 @@ import java.util.HashMap;
  * Created by andy on 2/28/17.
  */
 public class Test001 {
-    public int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> pair=new HashMap<>();
         int result[] = new int[2];
         for(int i=0;i<nums.length;i++){
@@ -19,6 +19,9 @@ public class Test001 {
     }
 
     public static void main(String[] args){
-        System.out.print("test001");
+        int[] arr =  new int[]{1,2,5,6};
+        int target = 7;
+        int[] res = twoSum(arr, target);
+        System.out.print("pairs:" + res[0] +"," + res[1]);
     }
 }
